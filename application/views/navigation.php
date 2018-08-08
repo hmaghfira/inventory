@@ -26,4 +26,11 @@
         </li>
       </ul>
     </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <b><p style="color: #fff; font-size: 12px; text-align: justify; position: absolute; bottom: 0px">
+        &copy NCC Laboratory 2018.<br>
+        Version 1.0
+      </p></b>
+    </div>
   </nav>

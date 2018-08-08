@@ -118,24 +118,7 @@
           </div>
           <!-- EO UPLOAD FORM -->
 
-          <script>
-          function openCity(evt, content) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i < tabcontent.length; i++) {
-                  tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = 0; i < tablinks.length; i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(content).style.display = "block";
-              evt.currentTarget.className += " active";
-          }
-
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-          </script>
+          
         </div>
       </div>
     </div>
@@ -173,65 +156,38 @@
 
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
     <div class="my-auto">
-      <h2 class="mb-5">Skills</h2>
-
-      <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-      <ul class="list-inline list-icons">
-        <li class="list-inline-item">
-          <i class="devicons devicons-html5"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-css3"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-javascript"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-jquery"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-sass"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-less"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-bootstrap"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-wordpress"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-grunt"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-gulp"></i>
-        </li>
-        <li class="list-inline-item">
-          <i class="devicons devicons-npm"></i>
-        </li>
-      </ul>
-
-      <div class="subheading mb-3">Workflow</div>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          Mobile-First, Responsive Design</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          Cross Browser Testing &amp; Debugging</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          Cross Functional Teams</li>
-        <li>
-          <i class="fa-li fa fa-check"></i>
-          Agile Development &amp; Scrum</li>
-      </ul>
+      <h2 class="mb-5">CONTACT ADMIN</h2>
+      <div class="subheading mb-0">Email : </div>
+      <br>
+      <div class="subheading mb-0">Phone : </div>
+      <br>
+      <div class="subheading mb-0">
+        NCC Laboratory, Informatics Department 3rd Floor<br>
+        Institut Teknologi Sepuluh Nopember<br>
+        Surabaya, Indonesia<br>
+      </div>
     </div>
   </section>
 </div>
 
 <script type="text/javascript">
+  // TAB PC RESERVATION
+  function openCity(evt, content) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(content).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
   // DATERANGEPICKER
   $(function() {
   $('input[name="daterange"]').daterangepicker({
