@@ -1,99 +1,143 @@
 <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="home">
+  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="home">
     <div class="my-auto">
-      <h1 class="mb-0">Clarence
-        <span class="text-primary">Taylor</span>
+      <h1 class="mb-0">NCC
+        <span class="text-primary">INVENTORY</span>
       </h1>
-      <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-        <a href="mailto:name@email.com">name@email.com</a>
-      </div>
-      <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-      <ul class="list-inline list-social-icons mb-0">
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
+      <hr>
+      <h2 class="mb-0">RULES</h2>
+
+      <p class="mb-0" style="font-size: 18px;">
+        1. There are two types of loans : <a href="#pcreservation"><strong>PC RESERVATION</strong></a> and <a href="#inventory"><strong>LOAN INVENTORY</strong></a><br>
+        2. <strong>PC RESERVATION</strong> steps :<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Each student only allowed to create one reservation.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Fill the reservation form completely.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Click "Submit" button, so you will get the softcopy form.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Print out the form and bring to your Supervisor Lecturer to be signed.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Upload the scanned form to this web.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Wait until NCC Administrator accept your request (will be confirm by email).<br>
+        3. <strong>LOAN INVENTORY</strong> steps :<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Fill the loan form completely.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Click "Upload" button, so you will get the PDF form.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Print out the form and bring to your Supervisor Lecturer to be signed.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Upload the scanned form to this web.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Wait until NCC Administrator accept your request (will be confirm by email).<br>
+      </p>
     </div>
-    </section>
+  </section>
 
   <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="pcreservation">
     <div class="my-auto">
-      <h2 class="mb-5">Experience</h2>
+      <h2 class="mb-3">PC RESERVATION</h2>
 
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Senior Web Developer</h3>
-          <div class="subheading mb-3">Intelitec Solutions</div>
-          <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">March 2013 - Present</span>
+      <div class="resume-item mb-5">
+        <div class="resume-content mr-auto" style="width: 100%">
+          <div class="tab" style="text-align: center;">
+            <button class="tablinks" onclick="openCity(event, 'New')" id="defaultOpen" style="width: 50%"><b>New Reservation</b></button>
+            <button class="tablinks" onclick="openCity(event, 'Upload')" style="width: 50%"><b>Upload Form</b></button>
+          </div>
+
+          <!-- NEW RESERVE -->
+          <div id="New" class="tabcontent">
+            <br>
+            <h3 style="text-align: center; font-size: 33px">RESERVATION FORM</h3>
+            <hr>
+            <div class="my-auto">
+              <!-- RESERVATION FORM -->
+              <form method="POST" action="" style="padding-left: 40px; width: 70%; margin-left: 13%">
+                <div class="form-group">
+                  <label for="name"><b>Name</b></label>
+                  <input type="text" class="form-control" name="name"  id="name" aria-describedby="emailHelp" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="nrp"><b>NRP</b></label>
+                  <input type="number" class="form-control" name="nrp" id="nrp" placeholder="Ex: 05111540000000">
+                </div>
+                <div class="form-group">
+                  <label for="email"><b>Email</b></label>
+                  <input type="email" class="form-control"  name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="phone"><b>Phone</b></label>
+                  <input type="number" class="form-control"  name="phone" id="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                  <label for="dosbing"><b>Supervisor Lecturer</b></label>
+                  <input type="text" class="form-control"  name="dosbing" id="dosbing" placeholder="Dosen Pembimbing">
+                </div>
+                <div class="form-group">
+                  <label for="nip"><b>NIP Supervisor Lecturer</b></label>
+                  <input type="text" class="form-control" name="nip" id="nip" placeholder="NIP Dosen Pembimbing">
+                </div>
+
+                <div class="form-group">
+                  <label for="date"><b>Start - End Date</b></label>
+                  <input type="text" class="form-control" id="date" name="daterange" value="">
+                </div>
+
+                <div class="form-group">
+                  <label for="specification"><b>Specification</b></label>
+                  <textarea class="form-control" name="specification" id="specification" placeholder="Specification Needed" rows="3"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" style="margin-left: 88%">Submit</button>
+              </form>
+              <!-- EO RESERVATION FORM -->
+              <br>
+            </div>
+          </div>
+          <!-- EO NEW RESERVE -->
+
+          <!-- UPLOAD FORM -->
+          <div id="Upload" class="tabcontent">
+            <br>
+            <h3 style="text-align: center; font-size: 33px">UPLOAD FORM</h3>
+            <hr>
+            <div class="my-auto">
+              <!-- UPLOAD FORM -->
+              <form method="POST" action="" style="padding-left: 40px; width: 70%; margin-left: 13%">
+                <!-- <div class="form-group">
+                  <label for="name_u"><b>Name</b></label>
+                  <input type="text" class="form-control" required="" id="name_u" placeholder="Your Name">
+                </div> -->
+                <div class="form-group">
+                  <label for="nrp_u"><b>NRP</b></label> 
+                  <input type="number" class="form-control" id="nrp_u" name="nrp_u" placeholder="Type your NRP">
+                </div>
+
+                <div class="form-group">
+                  <label for="form_u"><b>File input</b></label>
+                  <input type="file" class="form-control-file" id="form_u" name="form_u" aria-describedby="fileHelp">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" style="margin-left: 88%">Submit</button>
+              </form>
+              <!-- EO RESERVATION FORM -->
+              <br>
+            </div> 
+          </div>
+          <!-- EO UPLOAD FORM -->
+
+          <script>
+          function openCity(evt, content) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(content).style.display = "block";
+              evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
         </div>
       </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Web Developer</h3>
-          <div class="subheading mb-3">Intelitec Solutions</div>
-          <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">December 2011 - March 2013</span>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row mb-5">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Junior Web Designer</h3>
-          <div class="subheading mb-3">Shout! Media Productions</div>
-          <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">July 2010 - December 2011</span>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row">
-        <div class="resume-content mr-auto">
-          <h3 class="mb-0">Web Design Intern</h3>
-          <div class="subheading mb-3">Shout! Media Productions</div>
-          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">September 2008 - June 2010</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -185,48 +229,15 @@
       </ul>
     </div>
   </section>
-
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-    <div class="my-auto">
-      <h2 class="mb-5">Interests</h2>
-      <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-      <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
-    </div>
-  </section>
-
-  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-    <div class="my-auto">
-      <h2 class="mb-5">Awards &amp; Certifications</h2>
-      <ul class="fa-ul mb-0">
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          Google Analytics Certified Developer</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          Mobile Web Specialist - Google Certification</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          1<sup>st</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          1<sup>st</sup>
-          Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          2<sup>nd</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-        <li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          1<sup>st</sup>
-          Place - James Buchanan High School - Hackathon 2006</li>
-        <li>
-          <i class="fa-li fa fa-trophy text-warning"></i>
-          3<sup>rd</sup>
-          Place - James Buchanan High School - Hackathon 2005</li>
-      </ul>
-    </div>
-  </section>
-
 </div>
+
+<script type="text/javascript">
+  // DATERANGEPICKER
+  $(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+  });
+</script>
