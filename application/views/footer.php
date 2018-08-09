@@ -20,13 +20,13 @@
     <script src="<?php echo base_url(); ?>static/js/admin.js"></script>
 
     <!-- Demo Js -->
-	    <script src="<?php echo base_url(); ?>static/js/demo.js"></script>
+	<script src="<?php echo base_url(); ?>static/js/demo.js"></script>
 
-	<!-- Datepicker -->
-    <!-- <script type="text/javascript" src="<?php echo base_url(); ?>static/js/bootstrap-datepicker.js"></script> -->
-
+    <!-- Datatables -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script> -->
     
-
   </body>
 
 </html>
