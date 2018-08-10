@@ -219,16 +219,40 @@
 
                 <div class="row">
                   <div class="col" style="width: 50%">
-                    <label for="dosbing"><b>Supervisor Lecturer</b></label>
-                    <input type="text" class="form-control"  name="dosbing" id="dosbing" placeholder="Dosen Pembimbing">
+                    <?php $today=date('Y-m-d') ?>
+                    <label for="tglAwal1"><b>Start Date</b></label>
+                    <input type="text" class="form-control"  name="tglAwal1" id="tglAwal1" min="<?php echo $today ?>">
                   </div>
 
                   <div class="col" style="width: 50%">
-                    <label for="nip"><b>NIP Supervisor Lecturer</b></label>
-                    <input type="text" class="form-control" name="nip" id="nip" placeholder="NIP Dosen Pembimbing">
+                    <label for="tglAkhirLoan"><b>End Date</b></label>
+                    <input type="text" class="form-control" name="tglAkhirLoan" id="tglAkhirLoan" min="tglAwalLoan">
                   </div>
                 </div>
-
+<!-- 
+                <div class="container">
+                  <div class='col-md-5'>
+                      <div class="form-group">
+                          <div class='input-group date' id='datetimepicker6'>
+                              <input type='text' class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class='col-md-5'>
+                      <div class="form-group">
+                          <div class='input-group date' id='datetimepicker7'>
+                              <input type='text' class="form-control" />
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+ -->
                 <br>
 
                 <div class="form-group">
@@ -304,13 +328,35 @@
   }
   document.getElementById("defaultOpenInven").click();
 
-  // DATERANGEPICKER
-  $(function() {
-  $('input[name="daterange"]').daterangepicker({
-    opens: 'left',
-    minDate: moment().subtract(2, 'years')
-    }, function(start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
-  });
+  // $( function() {
+  //   var dateFormat = "mm/dd/yy",
+  //     from = $( "#tglAwal1" )
+  //       .datepicker({
+  //         defaultDate: "+1w",
+  //         changeMonth: true,
+  //         numberOfMonths: 3
+  //       })
+  //       .on( "change", function() {
+  //         to.datepicker( "option", "minDate", getDate( this ) );
+  //       }),
+  //     to = $( "#tglAkhirLoan" ).datepicker({
+  //       defaultDate: "+1w",
+  //       changeMonth: true,
+  //       numberOfMonths: 3
+  //     })
+  //     .on( "change", function() {
+  //       from.datepicker( "option", "maxDate", getDate( this ) );
+  //     });
+ 
+  //   function getDate( element ) {
+  //     var date;
+  //     try {
+  //       date = $.datepicker.parseDate( dateFormat, element.value );
+  //     } catch( error ) {
+  //       date = null;
+  //     }
+ 
+  //     return date;
+  //   }
+  // } );
 </script>

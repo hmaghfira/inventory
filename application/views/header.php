@@ -23,26 +23,14 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url(); ?>static/css/resume.min.css" rel="stylesheet">
 
-    <!-- <link href="<?php echo base_url(); ?>static/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-
-    <!-- Waves Effect Css -->
-    <!-- <link href="<?php echo base_url(); ?>static/node-waves/waves.css" rel="stylesheet" /> -->
-
-    <!-- Animation Css -->
-    <!-- <link href="<?php echo base_url(); ?>static/animate-css/animate.css" rel="stylesheet" /> -->
-
-    <!-- Daterange picker -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
     <!-- Font awesome/icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Datatables -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"> -->
+    <!-- Datepicker -->
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    
+    
 
     <style>
         /* Style the tab */

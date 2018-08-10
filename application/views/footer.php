@@ -1,5 +1,5 @@
     <!-- Bootstrap core JavaScript -->
-    <!-- <script src="<?php echo base_url(); ?>static/vendor/jquery/jquery.min.js"></script> -->
+    <script src="<?php echo base_url(); ?>static/vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url(); ?>static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="<?php echo base_url(); ?>static/js/resume.min.js"></script>
@@ -26,6 +26,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script> -->
+    
     
   </body>
 
